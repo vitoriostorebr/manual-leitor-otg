@@ -6,10 +6,10 @@
     <title>Manual Hub Adaptador OTG Tipo-C - Vitorio Imports & Store</title>
     <style>
         :root {
-            --primary: #121c2c; /* Azul escuro dominante do logo */
-            --accent: #2cd4bf;  /* Verde-água/Ciano do logo */
-            --bg: #f3f4f6;      /* Cinza claro do fundo padrão */
-            --card: #ffffff;    /* Fundo branco do bloco centralizado */
+            --primary: #121c2c;
+            --accent: #2cd4bf;
+            --bg: #f3f4f6;
+            --card: #ffffff;
             --text: #374151;
             --alert-bg: #fff5f5;
             --alert-border: #f87171;
@@ -18,132 +18,51 @@
             --info-border: #4ade80;
             --info-text: #166534;
         }
-        
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        
-        /* Fundo e estrutura idênticos ao padrão do seu site Fire Stick */
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 40px 0; }
-        
-        /* Bloco principal centralizado com largura de 800px igual ao exemplo */
-        .container { max-width: 800px; margin: 0 auto; background: var(--card); padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03); }
-        
-        @media (max-width: 840px) {
-            body { padding: 16px 0; }
-            .container { margin: 0 16px; padding: 24px 20px; }
-        }
-        
-        /* Header Alinhado com o Logotipo Enviado */
-        .header { text-align: center; margin-bottom: 32px; border-bottom: 2px solid #f1f5f9; padding-bottom: 24px; }
-        .logo-img { max-width: 140px; height: auto; margin-bottom: 16px; }
-        .header h1 { font-size: 24px; color: var(--primary); margin-top: 4px; font-weight: 800; letter-spacing: -0.5px; }
-        .subtitle { font-size: 15px; color: #6b7280; font-weight: 500; margin-top: 6px; }
-        
-        h2 { font-size: 18px; font-weight: 700; color: var(--primary); margin: 32px 0 16px 0; border-bottom: 2px solid #f1f5f9; padding-bottom: 8px; }
-        
-        .alert-box { background-color: var(--alert-bg); border-left: 4px solid var(--alert-border); color: var(--alert-text); padding: 18px; border-radius: 8px; margin-bottom: 24px; font-size: 14.5px; }
-        .info-box { background-color: var(--info-bg); border-left: 4px solid var(--info-border); color: var(--info-text); padding: 18px; border-radius: 8px; margin-bottom: 24px; font-size: 14.5px; }
-        
-        p { font-size: 15px; margin-bottom: 16px; color: #4b5563; }
-        ul { margin-left: 24px; margin-bottom: 20px; font-size: 15px; color: #4b5563; }
-        li { margin-bottom: 8px; }
-        
-        ol { margin-left: 24px; margin-bottom: 20px; font-size: 15px; color: #4b5563; }
-        ol li { margin-bottom: 12px; }
-        ol li strong { color: var(--primary); }
-        
-        .step-section { background: #f9fafb; padding: 20px; border-radius: 12px; margin-bottom: 20px; border: 1px solid #f3f4f6; }
-        .step-title { font-size: 15px; font-weight: bold; color: var(--primary); margin-bottom: 14px; border-left: 4px solid var(--accent); padding-left: 10px; }
-        
-        /* Seção de Suporte no padrão profissional limpo */
-        .footer-notice { border-top: 2px solid #f1f5f9; padding-top: 32px; text-align: center; margin-top: 40px; }
-        .footer-notice p { font-size: 15px; color: #374151; margin-bottom: 20px; font-weight: 500; }
-        
-        .btn-whatsapp { display: inline-flex; align-items: center; justify-content: center; background-color: #25d366; color: white; text-decoration: none; padding: 14px 36px; border-radius: 9999px; font-weight: bold; font-size: 15px; box-shadow: 0 4px 10px -1px rgba(37, 211, 102, 0.3); transition: transform 0.2s; }
-        .btn-whatsapp:active { transform: scale(0.98); }
-        
-        .copyright { text-align: center; font-size: 12px; color: #9ca3af; margin-top: 32px; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 48px 0; }
+        .container { max-width: 800px; margin: 0 auto; background: var(--card); padding: 48px; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03); }
+        .header { text-align: center; margin-bottom: 40px; border-bottom: 2px solid #f1f5f9; padding-bottom: 32px; }
+        .logo-img { max-width: 160px; height: auto; margin-bottom: 16px; }
+        .header h1 { font-size: 28px; color: var(--primary); margin-top: 8px; font-weight: 800; letter-spacing: -0.5px; }
+        .subtitle { font-size: 18px; color: #6b7280; font-weight: 500; margin-top: 8px; }
+        h2 { font-size: 22px; font-weight: 800; color: var(--primary); margin: 40px 0 20px 0; border-bottom: 2px solid #f1f5f9; padding-bottom: 12px; letter-spacing: -0.3px; }
+        .alert-box { background-color: var(--alert-bg); border-left: 5px solid var(--alert-border); color: var(--alert-text); padding: 24px; border-radius: 8px; margin-bottom: 32px; font-size: 16px; }
+        .info-box { background-color: var(--info-bg); border-left: 5px solid var(--info-border); color: var(--info-text); padding: 24px; border-radius: 8px; margin-bottom: 32px; font-size: 16px; }
+        p { font-size: 16.5px; margin-bottom: 20px; color: #4b5563; }
+        ul, ol { margin-left: 28px; margin-bottom: 24px; font-size: 16.5px; color: #4b5563; }
+        li { margin-bottom: 10px; }
+        .step-section { background: #f9fafb; padding: 28px; border-radius: 12px; margin-bottom: 24px; border: 1px solid #f3f4f6; }
+        .step-title { font-size: 18px; font-weight: 800; color: var(--primary); margin-bottom: 18px; border-left: 5px solid var(--accent); padding-left: 12px; }
+        .footer-notice { border-top: 2px solid #f1f5f9; padding-top: 40px; text-align: center; margin-top: 48px; }
+        .btn-whatsapp { display: inline-flex; align-items: center; justify-content: center; background-color: #25d366; color: white; text-decoration: none; padding: 16px 44px; border-radius: 9999px; font-weight: bold; font-size: 16px; }
+        .copyright { text-align: center; font-size: 13px; color: #9ca3af; margin-top: 40px; }
     </style>
 </head>
 <body>
-
 <div class="container">
-    <!-- Header com Logotipo Oficial -->
     <div class="header">
         <img src="logo.png" alt="Vitorio Imports & Store" class="logo-img">
         <h1>Guia de Configuração e Uso</h1>
         <div class="subtitle">Hub Adaptador OTG Multiportas USB Tipo-C</div>
     </div>
-
-    <p>Obrigado por adquirir seu produto com a <strong>Vitorio Imports & Store</strong>! Este dispositivo é <strong>100% Plug & Play</strong>, funcionando de forma automática e dispensando a instalação de qualquer aplicativo.</p>
-
-    <!-- Restrições de Compatibilidade -->
+    <p>Obrigado por adquirir seu produto com a <strong>Vitorio Imports & Store</strong>! Dispositivo 100% Plug & Play.</p>
     <div class="alert-box">
         <strong>⚠️ Importante antes de começar:</strong>
-        <ul style="margin-top: 8px; margin-bottom: 0;">
-            <li><strong>Aparelhos Compatíveis:</strong> Celulares Android modernos, notebooks e iPhones das linhas 15 e 16 (todos com entrada USB Tipo-C nativa).</li>
-            <li><strong>NÃO Compatível:</strong> iPhones antigos com entrada de cabo Lightning (iPhone 14, 13, 12, 11 e anteriores).</li>
-            <li><strong>Mídias NÃO Suportadas:</strong> Não aceita formatos antigos proprietários como Sony Memory Stick (Pro Duo de PSP), cartões CF ou mídias de PlayStation.</li>
+        <ul style="margin-top: 10px; margin-bottom: 0;">
+            <li>Compatível com celulares Android modernos, notebooks e iPhones 15/16 (USB Tipo-C).</li>
+            <li>NÃO compatível com iPhones com entrada Lightning.</li>
         </ul>
     </div>
-
-    <h2>🔌 Conexões Disponíveis no Hub</h2>
-    <ul>
-        <li><strong>Slot SD:</strong> Para cartões de memória grandes de câmeras fotográficas.</li>
-        <li><strong>Slot Micro SD (TF):</strong> Para cartões pequenos de celulares, drones e câmeras de ação.</li>
-        <li><strong>Porta USB (Fêmea):</strong> Para conectar Pen Drives, HDs Externos/SSDs, mouses e teclados.</li>
-    </ul>
-
     <h2>🔄 Procedimento de Uso Passo a Passo</h2>
-    
-    <!-- Seção Android -->
     <div class="step-section">
-        <div class="step-title">🤖 No Sistema Android (Samsung, Motorola, Xiaomi, etc.)</div>
-        <ol>
-            <li>Insira o seu Cartão de Memória, Pen Drive ou HD firmemente no adaptador.</li>
-            <li>Conecte o plug USB Tipo-C na entrada de carregamento do seu smartphone.</li>
-            <li><strong>Caso o celular não reconheça de primeira:</strong> Algumas marcas (como Realme, Oppo, Vivo, OnePlus e alguns Xiaomi) desativam a conexão por segurança. Vá nas <strong>Configurações</strong> do celular, digite <strong>"OTG"</strong> na barra de pesquisa e <strong>ATIVE</strong> a chave "Conexão OTG".</li>
-            <li>Abra o gerenciador de arquivos padrão do seu celular (aplicativo <em>Meus Arquivos</em> na Samsung, <em>Files do Google</em> na Motorola/Xiaomi).</li>
-            <li>Clique em <strong>"Armazenamento USB"</strong> ou <strong>"Drive USB"</strong> para acessar suas mídias.</li>
-        </ol>
+        <div class="step-title">🤖 Android e iOS</div>
+        <p>Conecte o adaptador e acesse o gerenciador de arquivos correspondente do seu dispositivo.</p>
     </div>
-
-    <!-- Seção iOS -->
-    <div class="step-section">
-        <div class="step-title">🍏 No Sistema iOS (iPhone 15, 16 ou iPads Tipo-C)</div>
-        <ol>
-            <li>Insira o seu Cartão de Memória, Pen Drive ou HD firmemente no adaptador.</li>
-            <li>Conecte o adaptador na porta USB Tipo-C do seu iPhone ou iPad.</li>
-            <li>Localize e abra o aplicativo nativo da Apple chamado <strong>"ARQUIVOS"</strong> (ícone de uma pasta azul que já vem de fábrica).</li>
-            <li>Na barra de navegação inferior, toque na aba <strong>"Explorar"</strong> (or *Browse*).</li>
-            <li>Na lista de "Locais", logo abaixo de <em>No Meu iPhone</em>, aparecerá o seu dispositivo de armazenamento. Clique nele para gerenciar seus arquivos!</li>
-        </ol>
-    </div>
-
-    <h2>🛠️ Solução de Problemas (FAQ)</h2>
-    
-    <strong>1. Conectei meu HD Externo mas o celular não reconheceu. Por quê?</strong>
-    <div class="info-box" style="margin-top: 6px;">
-        HDs Externos mecânicos de disco rígido muito antigos ou muito grandes necessitam de muita energia elétrica para girar os componentes internos. Como a bateria do celular fornece energia limitada, alguns HDs podem não ligar. Pen drives comuns e HDs modernos do tipo <strong>SSD</strong> funcionam perfeitamente.
-    </div>
-
-    <strong>2. Posso usar as três portas simultaneamente?</strong>
-    <p>Para garantir a estabilidade máxima e proteger seus dados contra conflitos de sistema, o celular processa <strong>um armazenamento por vez</strong>. Conecte apenas um dispositivo por transferência.</p>
-
-    <strong>3. O leitor esquenta durante o uso? É normal?</strong>
-    <p>Sim! Durante grandes transferências de arquivos (como vídeos pesados), o chip interno trabalha em alta performance e transfere o calor para a carcaça do produto. Isso é perfeitamente normal, seguro e indica que o produto está dissipando o calor corretamente.</p>
-
-    <!-- Rodapé de Suporte Oficial Limpo -->
     <div class="footer-notice">
-        <p>Precisa de suporte adicional? Entre em contato conosco através do nosso Whatsapp.</p>
-        <a href="https://wa.me" class="btn-whatsapp" target="_blank">
-            Chamar no WhatsApp
-        </a>
+        <p>Precisa de suporte adicional? Entre em contato pelo WhatsApp.</p>
+        <a href="https://wa.me" class="btn-whatsapp" target="_blank">Chamar no WhatsApp</a>
     </div>
-
-    <div class="copyright">
-        © 2026 - Vitorio Imports & Store
-    </div>
+    <div class="copyright">© 2026 - Vitorio Imports & Store</div>
 </div>
-
 </body>
 </html>
